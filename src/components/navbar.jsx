@@ -90,6 +90,7 @@ class Navbar extends React.Component {
             <img
               src={this.state.logo}
               alt="logo"
+              className="logo"
               style={{ maxWidth: "500px" }}
             />
           </a>

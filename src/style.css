@@ -391,6 +391,14 @@ a:hover {
 /*
 NAVBAR
 */
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+    height: 100px;
+    weight: 100px;
+  }
+}
+
 
 .navbar-b {
   transition: all .5s ease-in-out;
