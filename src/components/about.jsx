@@ -86,7 +86,7 @@ class About extends React.Component {
                       </div>
                     </div>
                     <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
+                       <p className="title-s">Skill</p>
                       {this.state.skills.map(skill => {
                         return (
                           <React.Fragment key={skill.id}>

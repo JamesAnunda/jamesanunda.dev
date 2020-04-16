@@ -1,7 +1,6 @@
 //React
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Link, Switch} from 'react-router-dom';
 
 //import css in order
 import 'normalize.css';

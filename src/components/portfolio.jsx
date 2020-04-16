@@ -333,9 +333,9 @@ class Portfolio extends React.Component {
               <div className="work-box">
                 <a href={stock5} data-lightbox="gallery-mf">
                   <div className="work-img">
-                    <img src={stock5} alt="" className="img-fluid" />
+                    {/* <img src={stock5} alt="" className="img-fluid" /> */}
                   </div>
-                  <div className="work-content">
+                  {/* <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
                         <h2 className="w-title">Lorem Ipsum</h2>
@@ -351,7 +351,7 @@ class Portfolio extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </a>
                 <a
                   href={stock1}
