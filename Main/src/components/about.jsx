@@ -49,12 +49,12 @@ class About extends React.Component {
         {
           id: "second-p-about",
           content:
-            "I'm a student at Ivy Tech Community College studying Infomatics. Welcome to my new Website (if you have seen my github page one). Feel free to look around"
+            "I'm a student at Ivy Tech Community College studying Infomatics. Welcome to my new Website (if you have seen my github page one). Feel free to look around!"
         },
         {
           id: "third-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            ""
         }
       ]
     };

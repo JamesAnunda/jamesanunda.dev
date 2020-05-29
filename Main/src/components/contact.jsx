@@ -8,6 +8,7 @@ class Contact extends React.Component {
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
         style={{ backgroundImage: "url(" + imageOverlay + ")" }}
       >
+        <h1>THIS STILL IN DEVELOPMENT!</h1>
         <div className="overlay-mf"></div>
         <div className="container">
           <div className="row">
