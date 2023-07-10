@@ -41,6 +41,6 @@ export const TimeLineData = [
   { year: 2014, text: 'Started my journey in PLTW Computer Science Class at Homestead High School', },
   { year: 2018, text: 'Kept learning and went to won my first Hackathon, AT&T FirstNet Hackathon at the Indy 500', },
   { year: 2019, text: 'President of Infomation Club at Ivy Tech Community College', },
-  { year: 2021, text: 'Graduted with Associate of Applied Science', },
+  { year: 2021, text: 'Contiuning my education at Purdue Fort Wayne', },
   // { year: 2021, text: 'Started my own platform', },
 ];
