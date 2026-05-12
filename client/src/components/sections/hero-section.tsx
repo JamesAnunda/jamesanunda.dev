@@ -11,7 +11,7 @@ export default function HeroSection() {
               Hi, I'm <span className="text-gradient">James Anunda</span>
             </h1>
             <h2 className="text-xl md:text-2xl font-medium mb-6 text-gray-700 dark:text-gray-300">
-              Software Engineer specializing in full-stack development
+              IT Professional specializing in full-stack development
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
               I build robust and scalable web applications with modern technologies.
