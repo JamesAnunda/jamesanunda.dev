@@ -3,7 +3,7 @@
  *
  * Provides two columns:
  *  - Left: static contact information (email, location, social links)
- *  - Right: a validated contact form that POSTs to /api/contact on submission
+ *  - Right: a validated contact form that sends lead notifications through FormSubmit
  *
  * Form validation is handled by react-hook-form + Zod.
  * Email delivery is handled by the Express backend via SendGrid — no database is used.
@@ -36,7 +36,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 // Lucide icon components used in the contact info list on the left side
 import { Mail, MapPin, Globe, Linkedin, Github } from "lucide-react";
 
-// Utility that makes the POST request to the /api/contact Express endpoint
+// Utility that sends a lead notification through FormSubmit
 import { sendContactEmail } from "@/lib/utils";
 import { content } from "@/data/content";
 
@@ -101,7 +101,7 @@ export default function ContactSection() {
     setIsSending(true);
 
     try {
-      // Call the fetch wrapper which POSTs to /api/contact on the Express server
+      // Send the validated lead through the hosted form endpoint
       const result = await sendContactEmail(
         data.name,    // Sender's full name
         data.email,   // Sender's email address

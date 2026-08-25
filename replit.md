@@ -46,15 +46,13 @@ The server uses a simple architecture:
 The schema currently defines a basic `users` table, but the portfolio doesn't require persistent storage for its main features (contact form sends emails directly).
 
 ### API Structure
-Single API endpoint:
-- `POST /api/contact` - Receives contact form submissions and sends emails via SendGrid
+The portfolio currently has no custom API endpoints. Contact-form leads are sent directly through FormSubmit.
 
 ## External Dependencies
 
-### Email Service
-- **SendGrid**: Used for sending contact form emails
-- **Environment Variable**: `SENDGRID_API_KEY` required for email functionality
-- **Fallback**: Logs warning if API key not set, returns error on send attempts
+### Lead Notifications
+- **FormSubmit**: Delivers contact-form leads without a backend email API or API key
+- **Activation**: The recipient confirms the address once after the first submission
 
 ### Database
 - **Neon Database**: PostgreSQL serverless driver (`@neondatabase/serverless`)
