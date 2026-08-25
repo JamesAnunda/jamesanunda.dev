@@ -9,6 +9,11 @@
 // The single exported object that all section components import
 export const content = {
 
+  profile: {
+    githubUrl: "https://github.com/JamesAnunda",
+    linkedinUrl: "https://www.linkedin.com/in/jamesanunda/",
+  },
+
   /**
    * skills — list of technology names shown as tags in the About section.
    * Add, remove, or reorder entries here to update the skills display.
@@ -45,21 +50,21 @@ export const content = {
       detailsUrl: "#",
 
       // Link to the project's GitHub repository
-      githubUrl: "https://github.com"
+      githubUrl: "https://github.com/JamesAnunda"
     },
     {
       title: "Task Management App",
       description: "A productivity application that helps teams organize and track their projects and tasks efficiently.",
       technologies: ["React", "Redux", "Firebase"],
       detailsUrl: "#",
-      githubUrl: "https://github.com"
+      githubUrl: "https://github.com/JamesAnunda"
     },
     {
       title: "Analytics Dashboard",
       description: "A comprehensive data visualization tool that helps businesses make informed decisions based on real-time metrics.",
       technologies: ["Vue.js", "D3.js", "Express"],
       detailsUrl: "#",
-      githubUrl: "https://github.com"
+      githubUrl: "https://github.com/JamesAnunda"
     }
   ]
 };

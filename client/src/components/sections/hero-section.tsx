@@ -38,13 +38,13 @@ export default function HeroSection() {
 
             {/* Sub-headline — professional title / specialisation */}
             <h2 className="text-xl md:text-2xl font-medium mb-6 text-gray-700 dark:text-gray-300">
-              IT Professional specializing in full-stack development
+              IT professional with hands-on systems, network, scripting, and software development skills
             </h2>
 
             {/* Short introductory paragraph inviting collaboration */}
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-              I build robust and scalable web applications with modern technologies.
-              Let's create something amazing together.
+              I support reliable IT operations—from networks and system administration to scripting,
+              automation, and development work when the problem calls for it.
             </p>
 
             {/* CTA button row — flex-wrap ensures they stack gracefully on very small screens */}

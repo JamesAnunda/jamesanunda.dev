@@ -34,10 +34,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 
 // Lucide icon components used in the contact info list on the left side
-import { Mail, MapPin, Globe, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Globe, Linkedin, Github } from "lucide-react";
 
 // Utility that makes the POST request to the /api/contact Express endpoint
 import { sendContactEmail } from "@/lib/utils";
+import { content } from "@/data/content";
 
 /**
  * formSchema — Zod validation schema for the contact form.
@@ -215,7 +216,7 @@ export default function ContactSection() {
 
                     {/* LinkedIn profile link */}
                     <a
-                      href="https://linkedin.com"
+                      href={content.profile.linkedinUrl}
                       target="_blank"          // Opens in a new tab
                       rel="noopener noreferrer" // Security: prevents the new tab from accessing window.opener
                       className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 transition-colors"
@@ -226,24 +227,13 @@ export default function ContactSection() {
 
                     {/* GitHub profile link */}
                     <a
-                      href="https://github.com"
+                      href={content.profile.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 transition-colors"
                       aria-label="GitHub"
                     >
                       <Github className="h-5 w-5" />
-                    </a>
-
-                    {/* Twitter / X profile link */}
-                    <a
-                      href="https://twitter.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-blue-400 transition-colors"
-                      aria-label="Twitter"
-                    >
-                      <Twitter className="h-5 w-5" />
                     </a>
 
                   </div>

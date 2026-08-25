@@ -12,9 +12,10 @@
 // getCurrentYear returns the current 4-digit year for the copyright notice
 // scrollToSection triggers CSS smooth-scroll to a section by its DOM id
 import { getCurrentYear, scrollToSection } from "@/lib/utils";
+import { content } from "@/data/content";
 
 // Lucide icon components used throughout the footer
-import { Github, Linkedin, Twitter, ChevronRight, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, ChevronRight, Mail, MapPin } from "lucide-react";
 
 /**
  * Footer — renders the full-width dark footer at the bottom of the portfolio page.
@@ -48,7 +49,7 @@ export default function Footer() {
 
             {/* Short tagline / bio summary */}
             <p className="text-gray-400 mb-6">
-              Software Engineer focused on creating elegant and efficient solutions for complex problems.
+              IT professional bringing practical systems, network, scripting, and software development skills to complex problems.
             </p>
 
             {/* Row of social media icon links */}
@@ -56,7 +57,7 @@ export default function Footer() {
 
               {/* LinkedIn profile link — opens in a new tab safely */}
               <a
-                href="https://linkedin.com"
+                href={content.profile.linkedinUrl}
                 target="_blank"           // Open in new tab
                 rel="noopener noreferrer" // Prevent the opened page from accessing window.opener
                 className="text-gray-400 hover:text-white transition-colors"
@@ -67,24 +68,13 @@ export default function Footer() {
 
               {/* GitHub profile link */}
               <a
-                href="https://github.com"
+                href={content.profile.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
-              </a>
-
-              {/* Twitter / X profile link */}
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
               </a>
 
             </div>
