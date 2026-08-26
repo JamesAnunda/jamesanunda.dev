@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0a0d14" />
+    <title>Development Projects | James Anunda</title>
+    <meta name="description" content="A private workspace for development projects by James Anunda." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Development projects home">
+        <span class="brand-mark">JA</span>
+        <span class="brand-copy">
+          <strong>James Anunda</strong>
+          <small>Development workspace</small>
+        </span>
+      </a>
+      <span class="environment"><i></i>Development environment</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">// PROJECT DIRECTORY</p>
+        <h1 id="page-title">Build. Test.<br /><span>Ship with confidence.</span></h1>
+        <p class="intro">A central launch point for websites, dashboards, and experiments currently in development.</p>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">AVAILABLE PROJECTS</p>
+            <h2 id="projects-title">Workspace</h2>
+          </div>
+          <span>2 projects</span>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card website" href="./test/">
+            <div class="card-meta">
+              <span class="project-icon" aria-hidden="true">WT</span>
+              <span class="status"><i></i>Ready for testing</span>
+            </div>
+            <div class="card-copy">
+              <p class="type">WEBSITE STAGING</p>
+              <h3>Website Test</h3>
+              <p>The staging root for reviewing the main website before changes are deployed to production.</p>
+            </div>
+            <span class="open">Open project <b aria-hidden="true">&nearr;</b></span>
+          </a>
+
+          <a class="project-card arcola" href="./arcola-tractor-pull-dashboard/">
+            <div class="card-meta">
+              <span class="project-icon" aria-hidden="true">AT</span>
+              <span class="status"><i></i>In development</span>
+            </div>
+            <div class="card-copy">
+              <p class="type">EVENT OPERATIONS</p>
+              <h3>Arcola Tractor Pull Dashboard</h3>
+              <p>A working dashboard for managing tractor pull event data, participants, and results.</p>
+            </div>
+            <span class="open">Open project <b aria-hidden="true">&nearr;</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Private development workspace</span>
+      <span>&copy; <span id="year">2026</span> James Anunda</span>
+    </footer>
+
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
