@@ -1,5 +1,6 @@
 
 {
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "main-website",
   "compatibility_date": "2026-11-11",
   "assets": {
